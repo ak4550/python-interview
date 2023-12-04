@@ -227,3 +227,15 @@ An iterable is any Python object capable of returning its elements one at a time
 #### Compare and contrast threads and processes in Python. Provide an example of using threads.
 Threads and processes are used for concurrent execution. Threads share the same memory space, while processes have separate memory spaces.
 
+#### Singleton in Python.
+```
+class Singleton:
+  _instance = None
+
+  def __new__(cls, *args, **kwargs):
+    if cls._instance is None:
+        cls._instance = super().__init__(cls)
+        cls._instance.__init__(*args, **kwargs)
+
+    return cls._instance
+```
