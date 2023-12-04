@@ -34,12 +34,13 @@
 #### Explain decorators in Python and provide an example.
 
   Decorators are a powerful and flexible way to modify or extend the behavior of functions or methods in Python. They use the @decorator syntax and are applied above the function definition. Decorators are essentially functions that take a function as an argument and return a new function that usually extends or modifies the behavior of the original function.
-  ```def my_decorator(func):
-  def wrapper():
-      print("Something is happening before the function is called.")
-      func()
-      print("Something is happening after the function is called.")
-  return wrapper
+  ```
+  def my_decorator(func):
+    def wrapper(*args, **kwargs):
+        print("Something is happening before the function is called.")
+        func(args, kwargs)
+        print("Something is happening after the function is called.")
+    return wrapper
 
   @my_decorator
   def say_hello():
@@ -116,7 +117,6 @@ class Person:
 
 person = Person("Alice", 30)
 print(person.name, person.age)
-
 ```
 
 #### Explain the concept of closures in Python.
@@ -130,11 +130,10 @@ def outer_function(x):
 closure_instance = outer_function(10)
 result = closure_instance(5)
 print(result)  # Output: 15
-
 ```
 
 #### What is the purpose of the with statement in Python?
-The with statement is used to simplify resource management, such as file handling or network connections. It ensures that certain operations are performed before and after a block of code, for example, opening and closing a file. The with statement is used with objects that support the context management protocol by implementing __enter__ and __exit__ methods.
+The **with** statement is used to simplify resource management, such as file handling or network connections. It ensures that certain operations are performed before and after a block of code, for example, opening and closing a file. The with statement is used with objects that support the context management protocol by implementing __enter__ and __exit__ methods.
 ```
 class CustomContext:
     def __enter__(self):
@@ -146,11 +145,10 @@ class CustomContext:
 
 with CustomContext() as context:
     print("Inside the context")
-
 ```
 
 #### Explain the difference between deepcopy and shallowcopy in Python.
-copy.deepcopy creates a new object and recursively copies the content of the original object along with all nested objects. In contrast, copy.copy (shallow copy) creates a new object but does not create copies of the nested objects. Instead, it copies references to the nested objects. Therefore, changes made to nested objects in a shallow copy can affect the original object.
+**copy.deepcopy** creates a new object and recursively copies the content of the original object along with all nested objects. In contrast, **copy.copy** (shallow copy) creates a new object but does not create copies of the nested objects. Instead, it copies references to the nested objects. Therefore, changes made to nested objects in a shallow copy can affect the original object.
 ```
 import copy
 
@@ -163,7 +161,6 @@ original_list[0][0] = 100
 print(original_list)  # Output: [[100, 2, 3], [4, 5, 6]]
 print(shallow_copy)   # Output: [[100, 2, 3], [4, 5, 6]]
 print(deep_copy)      # Output: [[1, 2, 3], [4, 5, 6]]
-
 ```
 
 #### What is the purpose of the asyncio module in Python?
@@ -189,7 +186,6 @@ def outer():
 
 outer()
 print(f"Global scope: {x}")
-
 ```
 
 #### Explain the concept of generators in Python.
@@ -211,7 +207,6 @@ class CustomContext:
 
 with CustomContext() as context:
     print("Inside the context")
-
 ```
 
 #### What is monkey patching, and when would you use it in Python?
@@ -230,6 +225,5 @@ Python uses automatic memory management through a garbage collector. The primary
 An iterable is any Python object capable of returning its elements one at a time. An iterator is an object representing a stream of data, providing methods like __iter__() and __next__() to iterate through its elements. All iterators are iterables, but not all iterables are iterators. Iterables can be converted to iterators using the iter() function.
 
 #### Compare and contrast threads and processes in Python. Provide an example of using threads.
-
-  Threads and processes are used for concurrent execution. Threads share the same memory space, while processes have separate memory spaces.
+Threads and processes are used for concurrent execution. Threads share the same memory space, while processes have separate memory spaces.
 
