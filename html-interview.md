@@ -18,10 +18,10 @@ This declaration is for HTML5, the latest version of HTML.
 #### 5. Explain the difference between the \<script\> tag placement - in the \<head\> vs. at the end of the \<body\> in HTML.
 **Answer:** Placing the **\<script\>** tag in the **\<head\>** section means that the script will be loaded and executed before the HTML content is rendered. This is beneficial for scripts that need to run early in the page load process.
 
-On the other hand, placing the \<script\> tag at the end of the \<body\> allows the HTML content to load first, and then the script is loaded and executed. This is useful for scripts that don\'t need to interfere with the initial page rendering and can run after the main content has loaded\.
+On the other hand, placing the **\<script\>** tag at the end of the **\<body\>** allows the HTML content to load first, and then the script is loaded and executed. This is useful for scripts that don\'t need to interfere with the initial page rendering and can run after the main content has loaded\.
 
 #### 6. What is the purpose of the alt attribute in the \<img\> tag?
-**Answer:** The alt attribute in the \<img\> tag is used to provide alternative text for browsers that cannot display the image. It also serves as a text description of the image for users who may be using screen readers or have images disabled in their browsers. This attribute is essential for accessibility and helps make web content more inclusive.
+**Answer:** The alt attribute in the **\<img\>** tag is used to provide alternative text for browsers that cannot display the image. It also serves as a text description of the image for users who may be using screen readers or have images disabled in their browsers. This attribute is essential for accessibility and helps make web content more inclusive.
 
 #### 7. Explain the difference between GET and POST methods in HTML forms.
 **Answer:** The GET and POST methods are used to submit form data to a web server. The main differences are:
@@ -33,10 +33,10 @@ On the other hand, placing the \<script\> tag at the end of the \<body\> allows 
 - **Security:** POST is considered more secure for sensitive data as it doesn't expose information in the URL.
 
 #### 8. What is semantic HTML, and why is it important?
-**Answer:** Semantic HTML refers to using HTML tags that carry meaning about the structure and content of the webpage. Examples include \<header\>, \<nav\>, \<article\>, \<section\>, \<footer\>, etc. Using semantic HTML improves the structure and accessibility of a webpage, making it more understandable for both browsers and developers. It also enhances search engine optimization (SEO) and helps screen readers provide better information to users with disabilities.
+**Answer:** Semantic HTML refers to using HTML tags that carry meaning about the structure and content of the webpage. Examples include **\<header\>**, **\<nav\>**, **\<article\>**, **\<section\>**, **\<footer\>**, etc. Using semantic HTML improves the structure and accessibility of a webpage, making it more understandable for both browsers and developers. It also enhances search engine optimization (SEO) and helps screen readers provide better information to users with disabilities.
 
 #### 9. What is the purpose of the \<meta\> tag in HTML?
-**Answer:** The \<meta\> tag is used to provide metadata about the HTML document. Common uses include specifying the character set, setting the viewport for responsive design, and providing information for search engines. For example:
+**Answer:** The **\<meta\>** tag is used to provide metadata about the HTML document. Common uses include specifying the character set, setting the viewport for responsive design, and providing information for search engines. For example:
 ```
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,12 +53,12 @@ The first line sets the character set to UTF-8, and the second line configures t
 **Answer:** Responsive web design is an approach to designing and coding websites to provide an optimal viewing experience across various devices and screen sizes. It involves using flexible grids and layouts, CSS media queries, and flexible images to ensure that a website adapts to different devices, such as desktops, laptops, tablets, and smartphones. Responsive web design aims to create a seamless and consistent user experience regardless of the device being used.
 
 #### 12. What is the purpose of the target attribute in the \<a\> tag?
-**Answer:** The target attribute in the \<a\> (anchor) tag is used to specify where the linked document will be displayed when the link is clicked. Common values include:
+**Answer:** The target attribute in the **\<a\>** (anchor) tag is used to specify where the linked document will be displayed when the link is clicked. Common values include:
 
-- _blank: Opens the linked document in a new tab or window.
-- _self: Opens the linked document in the same frame or window (default behavior).
-- _parent: Opens the linked document in the parent frame.
-- _top: Opens the linked document in the full body of the window.
+- **_blank:** Opens the linked document in a new tab or window.
+- **_self:** Opens the linked document in the same frame or window (default behavior).
+- **_parent:** Opens the linked document in the parent frame.
+- **_top:** Opens the linked document in the full body of the window.
 
 ```
 <a href="https://example.com" target="_blank">Visit Example.com</a>
@@ -72,31 +72,31 @@ The first line sets the character set to UTF-8, and the second line configures t
 This informs assistive technologies that the \<button\> element has a role of a button.
 
 #### 14. How does the \<iframe\> tag work, and what is its purpose?
-**Answer:** The \<iframe\> (inline frame) tag is used to embed another HTML document within the current document. It is often used to include content from another source, such as a video, map, or external webpage, within a webpage. For example:
+**Answer:** The **\<iframe\>** (inline frame) tag is used to embed another HTML document within the current document. It is often used to include content from another source, such as a video, map, or external webpage, within a webpage. For example:
 ```
 <iframe src="https://www.youtube.com/embed/VIDEO_ID" width="560" height="315" frameborder="0" allowfullscreen></iframe>
 ```
-In this case, the \<iframe\> embeds a YouTube video within the webpage.
+In this case, the **\<iframe\>** embeds a YouTube video within the webpage.
 
 #### 15. What is the purpose of the data- attributes in HTML5?
-**Answer:** The data- attributes in HTML5 are used to store custom data private to the page or application. These attributes can be used by JavaScript to manipulate and interact with the content without affecting the standard attributes or behavior. For example:
+**Answer:** The **data-** attributes in HTML5 are used to store custom data private to the page or application. These attributes can be used by JavaScript to manipulate and interact with the content without affecting the standard attributes or behavior. For example:
 ```
 <div data-user-id="123" data-role="admin">John Doe</div>
 ```
-In this case, the data-user-id and data-role attributes store custom data associated with the \<div\> element.
+In this case, the **data-user-id** and **data-role** attributes store custom data associated with the \<div\> element.
 
 #### 16. How do you embed audio and video in HTML?
-**Answer:** Audio and video can be embedded in HTML using the \<audio\> and \<video\> tags, respectively. Here's an example of embedding a video:
+**Answer:** Audio and video can be embedded in HTML using the **\<audio\>** and **\<video\>** tags, respectively. Here's an example of embedding a video:
 ```
 <video width="640" height="360" controls>
   <source src="example.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 ```
-This code embeds a video file (in this case, "example.mp4") and provides controls for playback. The <audio> tag is similar and is used for embedding audio files.
+This code embeds a video file (in this case, "example.mp4") and provides controls for playback. The **<audio>** tag is similar and is used for embedding audio files.
 
 #### 17. Explain the purpose of the \<details\> and \<summary\> elements in HTML5.
-**Answer:** The \<details\> and \<summary\> elements are used to create a disclosure widget that allows the user to show or hide additional information. The \<summary\> element provides a visible heading or title for the details, and the content inside the \<details\> element is initially hidden. When the user clicks on the summary, the details expand or collapse. Example:
+**Answer:** The **\<details\>** and **\<summary\>** elements are used to create a disclosure widget that allows the user to show or hide additional information. The **\<summary\>** element provides a visible heading or title for the details, and the content inside the **\<details\>** element is initially hidden. When the user clicks on the summary, the details expand or collapse. Example:
 ```
 <details>
   <summary>Click to reveal more information</summary>
@@ -105,7 +105,7 @@ This code embeds a video file (in this case, "example.mp4") and provides control
 ```
 
 #### 18. What is the purpose of the \<nav\> element in HTML5?
-**Answer:** The \<nav\> element in HTML5 is used to define a section of navigation links. It is typically used to group together navigation menus, lists of links, or other navigation-related content on a webpage. For example:
+**Answer:** The **\<nav\>** element in HTML5 is used to define a section of navigation links. It is typically used to group together navigation menus, lists of links, or other navigation-related content on a webpage. For example:
 ```
 <nav>
   <ul>
@@ -115,10 +115,10 @@ This code embeds a video file (in this case, "example.mp4") and provides control
   </ul>
 </nav>
 ```
-Using the \<nav\> element helps convey the purpose of the enclosed content to both browsers and assistive technologies.
+Using the **\<nav\>** element helps convey the purpose of the enclosed content to both browsers and assistive technologies.
 
 #### 19. How does the \<canvas\> element work in HTML5?
-**Answer:** The \<canvas\> element is used to draw graphics, charts, and other visual elements on a webpage using JavaScript. It provides a drawing surface that can be manipulated through JavaScript to create dynamic and interactive content. For example:
+**Answer:** The **\<canvas\>** element is used to draw graphics, charts, and other visual elements on a webpage using JavaScript. It provides a drawing surface that can be manipulated through JavaScript to create dynamic and interactive content. For example:
 ```
 <canvas id="myCanvas" width="200" height="100"></canvas>
 ```
@@ -145,9 +145,9 @@ This code draws a red rectangle on the canvas.
 By using media queries, you can adjust the layout, font sizes, and other styles based on the screen size, creating a responsive design.
 
 #### 21. What is the purpose of the \<article\> and \<section\> elements in HTML5?
-**Answer:** The \<article\> element is used to define a self-contained piece of content that could be distributed and reused independently. It is suitable for articles, blog posts, comments, or any content that can exist on its own.
+**Answer:** The **\<article\>** element is used to define a self-contained piece of content that could be distributed and reused independently. It is suitable for articles, blog posts, comments, or any content that can exist on its own.
 
-On the other hand, the \<section\> element is a generic container that groups content together based on a theme or purpose. It is often used to divide content into chapters, topics, or other thematic groupings.
+On the other hand, the **\<section\>** element is a generic container that groups content together based on a theme or purpose. It is often used to divide content into chapters, topics, or other thematic groupings.
 ```
 <article>
   <h2>Article Title</h2>
@@ -161,7 +161,7 @@ On the other hand, the \<section\> element is a generic container that groups co
 ```
 
 #### 22. What is the purpose of the async and defer attributes in the \<script\> tag?
-**Answer:** The async and defer attributes in the \<script\> tag are used to control when a script is executed.
+**Answer:** The async and defer attributes in the **\<script\>** tag are used to control when a script is executed.
 
 - **async:** The async attribute allows the script to be downloaded asynchronously while the HTML parsing and rendering continue. The script will execute as soon as it's downloaded, which may not preserve the order of script dependencies.
 ```
@@ -174,7 +174,7 @@ On the other hand, the \<section\> element is a generic container that groups co
 ```
 
 #### 23. Explain the difference between the \<ol\> and \<ul\> elements in HTML.
-**Answer:** The \<ol\> (ordered list) and \<ul\> (unordered list) elements are used to create lists in HTML. The main difference is in the way they present the list items.
+**Answer:** The **\<ol\>** (ordered list) and **\<ul\>** (unordered list) elements are used to create lists in HTML. The main difference is in the way they present the list items.
 
 - **\<ol\>:** Ordered lists represent a list where the order of the items matters. List items are typically numbered.
 ```
