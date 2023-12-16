@@ -13,9 +13,9 @@ Answer: The DOCTYPE declaration is used to specify the version of HTML or XHTML 
 This declaration is for HTML5, the latest version of HTML.
 
 #### 4. What is the difference between \<div\> and \<span\> in HTML?
-Answer: Both <div> and <span> are container elements, but they are used in different contexts. <div> is a block-level element and is used to group and structure content, often for layout purposes. <span> is an inline element and is used to apply styles or scripting to a specific part of the text within a block-level element.
+Answer: Both \<div\> and \<span\> are container elements, but they are used in different contexts. \<div\> is a block-level element and is used to group and structure content, often for layout purposes. \<span\> is an inline element and is used to apply styles or scripting to a specific part of the text within a block-level element.
 
-#### 5. Explain the difference between the <script> tag placement - in the <head> vs. at the end of the <body> in HTML.
-Answer: Placing the <script> tag in the <head> section means that the script will be loaded and executed before the HTML content is rendered. This is beneficial for scripts that need to run early in the page load process.
+#### 5. Explain the difference between the \<script\> tag placement - in the \<head\> vs. at the end of the \<body\> in HTML.
+Answer: Placing the \<script\> tag in the \<head\> section means that the script will be loaded and executed before the HTML content is rendered. This is beneficial for scripts that need to run early in the page load process.
 
-On the other hand, placing the <script> tag at the end of the <body> allows the HTML content to load first, and then the script is loaded and executed. This is useful for scripts that don't need to interfere with the initial page rendering and can run after the main content has loaded.
+On the other hand, placing the \<script\> tag at the end of the \<body\> allows the HTML content to load first, and then the script is loaded and executed. This is useful for scripts that don\'t need to interfere with the initial page rendering and can run after the main content has loaded\.
