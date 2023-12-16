@@ -1,5 +1,35 @@
 ## Networking Interview Questions:
-#### How does SSH works?
+
+#### 1. What is the OSI model, and can you explain each layer?
+Explanation: The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes the functions of a telecommunication or computing system into seven abstraction layers.
+Example:
+- Physical Layer: Deals with the physical connection between devices, like cables or wireless signals.
+- Data Link Layer: Manages access to the physical network medium and provides error detection and correction.
+- Network Layer: Handles routing and forwarding of data packets between devices across different networks.
+- Transport Layer: Ensures end-to-end communication, error recovery, and flow control.
+- Session Layer: Manages sessions or connections between applications on different devices.
+- Presentation Layer: Translates data between the application layer and the lower layers, ensuring compatibility.
+- Application Layer: Provides network services directly to end-users or applications.
+
+#### 2. What is the difference between TCP and UDP?
+Explanation: TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are transport layer protocols with different characteristics.
+Example:
+TCP: Connection-oriented, reliable, ensures data integrity, and guarantees delivery. Examples include HTTP, FTP, and SMTP.
+UDP: Connectionless, faster but less reliable, and does not guarantee delivery. Examples include DNS, DHCP, and video streaming.
+
+#### 3. Explain the difference between a hub, a switch, and a router.
+Explanation:
+- Hub: Operates at the physical layer and simply broadcasts data to all devices connected, lacking intelligence.
+- Switch: Operates at the data link layer, intelligently forwards data only to the device it is intended for, reducing collisions and improving efficiency.
+- Router: Operates at the network layer, connects different networks, and makes decisions based on IP addresses to route data between them.
+
+#### 4. What is IP addressing? Explain IPv4 and IPv6.
+Explanation: IP addressing is a method of assigning unique numerical addresses to devices on a network to enable communication.
+Example:
+- IPv4: Uses a 32-bit address scheme, represented as four sets of decimal numbers separated by dots (e.g., 192.168.1.1).
+- IPv6: Uses a 128-bit address scheme, represented as eight groups of hexadecimal numbers separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+
+#### 5. How does SSH works?
 SSH, or Secure Shell, is a protocol used for securely connecting to a remote server or device over a network. It provides a secure channel over an unsecured network, such as the internet, by encrypting the communication between the client and the server. Here's a basic overview of how SSH works:
 - Client-Server Connection:
     The process begins with a client initiating a connection to a server. The client is the computer or device from which you want to connect, and the server is the remote computer or device to which you want to connect.
@@ -21,7 +51,7 @@ SSH, or Secure Shell, is a protocol used for securely connecting to a remote ser
 SSH can be used for various purposes, such as remote command-line access, file transfer (using tools like SCP or SFTP), and even for tunneling other network protocols securely.
 It's important to note that the security of SSH relies on the proper configuration of encryption algorithms, authentication methods, and key management practices. Users are encouraged to keep their SSH software and configurations up to date to mitigate potential vulnerabilities.
 
-#### Explain the Complete Process, what happens when we try to connect to the server through the server using ssh keys.
+#### 6. Explain the Complete Process, what happens when we try to connect to the server through the server using ssh keys.
 
 When you connect to a server using SSH key authentication, the process involves several steps to ensure secure and authenticated communication. Here's a detailed breakdown of the process:
 - Client Initiates Connection:
@@ -56,10 +86,5 @@ All data transferred between the client and server is encrypted. This includes c
 When the user decides to disconnect or log out, a termination message is sent, and the secure connection is closed.
 
 Using SSH keys for authentication provides a higher level of security compared to password-based authentication, as it eliminates the need to transmit passwords over the network. Additionally, it helps guard against various types of attacks, including brute-force attacks and password sniffing. Proper key management, such as protecting the private key with a passphrase and regularly updating keys, is crucial for maintaining the security of the SSH key-based authentication system.
-
-
-
-
-
 
 
