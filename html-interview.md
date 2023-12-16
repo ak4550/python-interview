@@ -12,7 +12,7 @@ Answer: The DOCTYPE declaration is used to specify the version of HTML or XHTML 
 ```
 This declaration is for HTML5, the latest version of HTML.
 
-#### 4. What is the difference between <div> and <span> in HTML?
+#### 4. What is the difference between \<div\> and \<span\> in HTML?
 Answer: Both <div> and <span> are container elements, but they are used in different contexts. <div> is a block-level element and is used to group and structure content, often for layout purposes. <span> is an inline element and is used to apply styles or scripting to a specific part of the text within a block-level element.
 
 #### 5. Explain the difference between the <script> tag placement - in the <head> vs. at the end of the <body> in HTML.
