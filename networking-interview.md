@@ -1,4 +1,4 @@
-## Linux Interview Questions:
+## Networking Interview Questions:
 #### How does SSH works?
 SSH, or Secure Shell, is a protocol used for securely connecting to a remote server or device over a network. It provides a secure channel over an unsecured network, such as the internet, by encrypting the communication between the client and the server. Here's a basic overview of how SSH works:
 - Client-Server Connection:
