@@ -31,14 +31,14 @@ A subquery is a query nested within another query. It can be used to retrieve da
 #### 9. What is a view?
 A view is a virtual table based on the result set of a SELECT query. It does not store data physically but retrieves data from the underlying tables whenever it is queried. Views are used to simplify complex queries and restrict access to specific columns or rows of a table.
 
-#### Find 2nd Highest Score Using SQL?
+#### 10. Find 2nd Highest Score Using SQL?
 ```
 SELECT MAX(score) AS second_highest_score
 FROM scores
 WHERE score < (SELECT MAX(score) FROM scores);
 ```
 
-#### Find nth Highest Score using SQL?
+#### 11. Find nth Highest Score using SQL?
 ```
 SELECT score
 FROM scores
