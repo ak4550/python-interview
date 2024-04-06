@@ -309,4 +309,4 @@ def check_website(url: str):
         return f"{url} is available"
     return f"{url} is unavialable"
 ```
-**command to run:** uvicorn <\filename\>:app --port 8000 --reload
+**command to run:** uvicorn \<filename\>:app --port 8000 --reload
