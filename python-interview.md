@@ -312,7 +312,7 @@ def check_website(url: str):
 **command to run:** uvicorn \<filename\>:app --port 8000 --reload
 
 
-#### 25. Give the Output for the following program.
+#### 25. Give the output for the following program.
 ```
 class A:
     value = 1
@@ -340,3 +340,18 @@ class C(B):
 **CASE II:** 1 1 2   
 **CASE III:** 1 2 2   
 **CASE IV:** 2 2 2   
+
+#### 26. Give the output for the following program.
+```
+class A:
+    value = 1
+
+class B:
+    value = 2
+
+class C(B, A):
+    pass
+
+print(C.value)
+```
+#### **Result:** 2
