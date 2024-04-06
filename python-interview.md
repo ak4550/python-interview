@@ -295,7 +295,7 @@ df = pd.DataFrame(data)
 df.to_csv("test.xlsx")
 ```
 
-#### 24. Create a FastAPI app to identify if give url is valid or not.
+#### 24. Create a FastAPI app to identify if a give website is working or not.
 ```
 from fastapi import FastAPI
 import requests
@@ -309,4 +309,4 @@ def check_website(url: str):
         return f"{url} is available"
     return f"{url} is unavialable"
 ```
-command to run: uvicorn <filename>:app --port 8000 --reload
+**command to run:** uvicorn <<filename>>:app --port 8000 --reload
