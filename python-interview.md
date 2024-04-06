@@ -245,7 +245,7 @@ class Singleton:
     return cls._instance
 ```
 
-#### 21. Find the longest substring.
+#### 21. Find the longest unique substring.
 a = "abcdefghabc"
 ```
 def longest_substring(s):
@@ -263,14 +263,14 @@ def longest_substring(s):
 
 
 #### 22. We are given that the string "abc" is valid. From any valid string V, we may split V into two pieces X and Y such that X + Y (X concatenated with Y) is equal to V.  (X or Y may be empty.)  Then, X + "abc" + Y is also valid. should be equals to V. If for example S = "abc", then examples of valid strings are: "abc", "aabcbc", "abcabc","ababcc". Examples of invalid strings are: "abccba", "ab", "cababc", "bac".Return true if and only if the given string S is valid
-
-# print(is_valid("abc"))  # Returns: True
-# print(is_valid("aabcbc"))  # Returns: True
-# print(is_valid("abcabc"))  # Returns: True
-# print(is_valid("abccba"))  # Returns: False
-# print(is_valid("ab"))  # Returns: False
-# print(is_valid("cababc"))  # Returns: False
-# print(is_valid("bac"))  # Returns: False
+##### Test Cases:
+###### print(is_valid("abc"))  # Returns: True
+###### print(is_valid("aabcbc"))  # Returns: True
+###### print(is_valid("abcabc"))  # Returns: True
+###### print(is_valid("abccba"))  # Returns: False
+###### print(is_valid("ab"))  # Returns: False
+###### print(is_valid("cababc"))  # Returns: False
+###### print(is_valid("bac"))  # Returns: False
 
 ```
 def is_valid(s):
