@@ -3,10 +3,10 @@ SQL (Structured Query Language) is a standard language used to communicate with 
 
 #### 2. What are the different types of SQL commands?
 SQL commands are broadly categorized into **four** types:   
-**(a).** Data Definition Language (DDL): Used to define and modify the structure of database objects. Examples include CREATE, ALTER, DROP.  
-**(b).** Data Manipulation Language (DML): Used to manipulate data stored in the database. Examples include SELECT, INSERT, UPDATE, DELETE.  
-**(c).** Data Control Language (DCL): Used to control access to data within the database. Examples include GRANT, REVOKE.    
-**(d).** Transaction Control Language (TCL): Used to manage transactions within the database. Examples include COMMIT, ROLLBACK.  
+**(a). Data Definition Language (DDL):** Used to define and modify the structure of database objects. Examples include CREATE, ALTER, DROP.  
+**(b). Data Manipulation Language (DML):** Used to manipulate data stored in the database. Examples include SELECT, INSERT, UPDATE, DELETE.  
+**(c). Data Control Language (DCL):** Used to control access to data within the database. Examples include GRANT, REVOKE.    
+**(d). Transaction Control Language (TCL):** Used to manage transactions within the database. Examples include COMMIT, ROLLBACK.  
 
 #### 3. What is a primary key?
 A primary key is a unique identifier for each record in a table. It ensures that each row in a table is uniquely identifiable and cannot have NULL values.
