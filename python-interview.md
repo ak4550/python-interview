@@ -310,3 +310,33 @@ def check_website(url: str):
     return f"{url} is unavialable"
 ```
 **command to run:** uvicorn \<filename\>:app --port 8000 --reload
+
+
+#### 25. Give the Output for the following program.
+```
+class A:
+    value = 1
+
+class B(A):
+    pass
+
+class C(B):
+    pass
+```
+
+**CASE I:** print(A.value, B.value, C.value)   
+**CASE II:**     
+    C.value = 2   
+    print(A.value, B.value, C.value)   
+**CASE III:**   
+    B.value = 2   
+    print(A.value, B.value, C.value)   
+**CASE IV:**   
+    A.value = 2   
+    print(A.value, B.value, C.value)    
+
+**Result**   
+**CASE I:** 1 1 1    
+**CASE II:** 1 1 2   
+**CASE III:** 1 2 2   
+**CASE IV:** 2 2 2   
